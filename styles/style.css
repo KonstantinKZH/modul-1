@@ -1,0 +1,409 @@
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Переменные */
+:root{
+    --black-121212: #121212;
+    --header-text: var(--black-121212);
+}
+
+/* Общий контейнер */
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
+
+/* К тегу <span> */
+.span-nav{
+    letter-spacing: 4px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* Nav panel */
+.nav{
+    margin-top: 33px;
+    margin-bottom: 70px;
+}
+
+.nav-string{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.metrics-link{
+    text-decoration: none;
+    color: var(--black-121212);
+}
+
+.metrics-img{
+    width: 126.89px;
+    height: 21.42px;
+    max-width: 126.89px;
+    max-height: 21.42px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 625.35px;
+}
+
+.nav-list__li{
+    margin: 0 30px;
+}
+
+.nav-list__link{
+    text-decoration: none;
+    color: var(--black-121212);
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    position: relative;
+    transition: .3s linear;
+}
+
+
+/* Нижнее подчёркивание у ссылок навигационной панели */
+.nav-list__link:hover{
+    opacity: 0.5;
+}
+
+.nav-list__link::after{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 3px;
+
+    background-color: var(--black-121212);
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-list__link:hover::after{
+    display: block;
+    opacity: 1;
+}
+
+
+/* Header */
+.header{
+    margin-bottom: 150px;
+}
+
+.header-main{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    width: 1000px;
+    margin-bottom: 30px;
+}
+
+.header-img-paragraph{
+    position: relative;
+}
+
+.header-img{
+    max-width: 1150px;
+    max-height: 500px;
+}
+
+.header-paragraph{
+    position: absolute;
+    left: 40px;
+    top: 379px;
+    color: #ffffff;
+    width: 450px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+
+/* About Us */
+.about-us{
+    margin-bottom: 150px;
+}
+
+.about-us-header{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.about-us-paragraph{
+    width: 1148px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 61px;
+    color: var(--black-121212);
+    margin-bottom: 60px;
+}
+
+.about-us-btn{
+    padding: 20px 40px;
+    text-decoration: none;
+    background-color: #AD1818;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    transition: .3s linear;
+}
+
+.about-us-btn:hover{
+    background-color: #ecb7b7;
+    color: #333333;
+}
+
+
+/* Projects */
+.projects{
+    margin-bottom: 150px;
+}
+
+.projects-block{
+    margin-bottom: 90px;
+}
+
+.projects-header{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--black-121212);
+    margin-bottom: 30px;
+}
+
+.projects-block-img{
+    margin-bottom: 15px;
+    max-width: 1150px;
+}
+
+.projects-block-header{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+
+    margin-bottom: 15px;
+}
+
+.projects-block-link{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #AD1818;
+    transition: .3s linear;
+}
+
+.projects-block-link:active{
+    font-size: 19px;
+}
+
+
+.projects-link{
+    display: block;
+
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 153px;
+    text-align: center;
+
+    color: #AD1818;
+    border: 1px solid #AD1818;
+
+    width: 1150px;
+    height: 153px;
+
+    transition: .3s linear;
+}
+
+.projects-link:hover{
+    background-color: #ecb7b7;
+    border: 1px solid #ecb7b7;
+    color: #333;
+}
+
+.projects-link:active{
+    font-size: 29px;
+}
+
+/* Services */
+
+.services{
+    max-width: 1400px;
+    background-color: var(--black-121212);
+    margin: 0 auto;
+}
+
+.black-container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 151px 0;
+}
+
+.services-header{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    margin-bottom: 34px;
+    
+}
+
+.services-block{
+    margin-bottom: 60px;
+}
+
+.services-block-img{
+    max-width: 1150px;
+}
+
+.services-block-header{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+
+/* Two room apartment project */
+.two-room-apartment-project{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.photo-bed{
+    
+    max-width: 1400px;
+}
+
+.text-content{
+    position: absolute;
+    left: 125px;
+    top: 575px;
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    color: #ffffff;
+
+    max-width: 443px;
+}
+
+
+/* Contacts */
+.contacts{
+    margin-bottom: 150px;
+}
+
+.contacts-img{
+    margin-bottom: 15px;
+    max-width: 24px;
+}
+
+.contacts-header{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--black-121212);
+    margin-bottom: 32px;
+}
+
+.contacts-telephone{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--black-121212);
+    margin-bottom: 32px;
+}
+
+.contacts-link{
+    text-decoration: none;
+    color: var(--black-121212);
+    opacity: 0.5;
+
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.contacts-link::after{
+    content: "";
+    display: block;
+    border: 1px solid var(--black-121212);
+    opacity: 0.5;
+    width: 430px;
+    height: 2px;
+    background-color: var(--black-121212);
+
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer{
+    max-width: 1400px;
+    background-color: var(--black-121212);
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 87px;
+}
+
+.footer-li{
+    list-style-type: none;
+    margin: 0 28px;
+}
+
+.footer-link{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.footer-link:hover{
+    opacity: 0.5;
+}
+
+.footer-header{
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.5;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-bottom: 30px;
+}
